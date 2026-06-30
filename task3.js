@@ -1,264 +1,244 @@
 
-// // Task - 1 Employee Login Eligibility
+ // Task - 1 Employee Login Eligibility
 
 
-// let age = Number(prompt("Enter your Age ?"));
+ let age = Number(prompt("Enter your Age ?"));
 
-// let Idcard = confirm("Is Employee ID Available ?");
+ let Idcard = confirm("Is Employee ID Available ?");
 
-// let attendance = Number(prompt("Please enter your attendance percentage :"));
-
-// if (age >= 18 && Idcard && attendance >= 75){
-//     console.log("Access Granted");
-// } else {
-//     console.log("Access Denied");
-// }
-
-
-// //Task - 2 Student Grade System
-
-// let grade = Number(prompt("Enter your Grade :"));
-
-// if (grade >= 90 && grade <= 100){
-//     console.log("Grade A+")
-// } else if (grade >= 80 && grade <= 89) {
-//     console.log("Grade A");
-// } else if (grade >= 70 && grade <= 79) {
-//     console.log("Grade B");
-// } else if (grade >= 60 && grade <= 69) {
-//     console.log("Grade C");
-// } else {
-//     console.log("Fail");
-// }
+ let attendance = Number(prompt("Please enter your attendance percentage :"));
+ if (age >= 18 && Idcard && attendance >= 75){
+     console.log("Access Granted");
+ } else {
+     console.log("Access Denied");
+ }
 
 
+ //Task - 2 Student Grade System
 
-// //Task - 3 ATM Withdrawl
+ let grade = Number(prompt("Enter your Grade :"));
 
-// let Balance = 5000;
+ if (grade >= 90 && grade <= 100){
+     console.log("Grade A+")
+ } else if (grade >= 80 && grade <= 89) {
+     console.log("Grade A");
+ } else if (grade >= 70 && grade <= 79) {
+     console.log("Grade B");
+ } else if (grade >= 60 && grade <= 69) {
+     console.log("Grade C");
+ } else {
+     console.log("Fail");
+ }
 
-// let Withdraw = 3000;
 
-// if (Balance > Withdraw && Withdraw % 100 === 0){
-//     console.log("Transaction Successful");
-//     Balance = Balance - Withdraw
-//     console.log("Remaining Balance : " + Balance);
-// } else {
-//     console.log("Transaction Failed");
+
+ //Task - 3 ATM Withdrawl
+
+ let Balance = 5000;
+
+ let Withdraw = 3000;
+
+ if (Balance > Withdraw && Withdraw % 100 === 0){
+     console.log("Transaction Successful");
+     Balance = Balance - Withdraw
+     console.log("Remaining Balance : " + Balance);
+ } else {
+     console.log("Transaction Failed");
     
-// }
+ }
 
 
-// // Task - 4 Food Ordering App
+ // Task - 4 Food Ordering App
 
-// let choice = Number(prompt("Enter your choice (1-5) :"));
+ let choice = Number(prompt("Enter your choice (1-5) :"));
 
-// switch (choice) {
-//     case 1 :
-//         console.log("You ordered Pizza");
-//         break;
-//     case 2 :
-//         console.log("You ordered Burger");
-//         break;
-//     case 3 :
-//         console.log("You ordered Shawarma");
-//         break;
-//     case 4 :
-//         console.log("You ordered Biryani");
-//         break;
-//     case 5 :
-//         console.log("You ordered Juice");
-//         break;
-//     default:
-//         console.log("Invalid Choice");
+ switch (choice) {
+     case 1 :
+         console.log("You ordered Pizza");
+         break;
+     case 2 :
+         console.log("You ordered Burger");
+         break;
+     case 3 :
+         console.log("You ordered Shawarma");
+         break;
+     case 4 :
+         console.log("You ordered Biryani");
+         break;
+     case 5 :
+         console.log("You ordered Juice");
+         break;
+     default:
+         console.log("Invalid Choice");
         
-// }
+ }
 
 
-// // Task - 5 E-commerce Discount
+ // Task - 5 E-commerce Discount
 
-// let purchase = Number(prompt("Enter your purchase amount :"));
-// let premiumUser = confirm("Are you a Premium User");
+ let purchase = Number(prompt("Enter your purchase amount :"));
+ let premiumUser = confirm("Are you a Premium User");
 
-// let discount = 0;
-// let finalPrice = 0;
+ let discount = 0;
+ let finalPrice = 0;
 
-// if (purchase >= 5000 && premiumUser){
-//     discount = purchase * 20 / 100
-// } else {
-//     discount = purchase * 10 / 100
-// }
+ if (purchase >= 5000 && premiumUser){
+     discount = purchase * 20 / 100
+ } else {
+     discount = purchase * 10 / 100
+ }
 
-// finalPrice = purchase - discount
+ finalPrice = purchase - discount
 
-// console.log(purchase);
-// console.log(discount);
-// console.log(finalPrice);
+ console.log(purchase);
+ console.log(discount);
+ console.log(finalPrice);
 
 
-// // Task - 6 Attendence Report 
+ // Task - 6 Attendence Report 
 
-// for (a=1; a<=30; a++){
-//     console.log("Day " + a + " Present");
+ for (a=1; a<=30; a++){
+     console.log("Day " + a + " Present");
     
-// }
+ }
 
 
-// // Task - 7 Even Number Generator
+ // Task - 7 Even Number Generator
 
-// for (let i = 1; i <= 100; i++) {
-//     if (i % 2 === 0) {
-//         console.log(i);
-//     }
-// }
+ for (let i = 1; i <= 100; i++) {
+     if (i % 2 === 0) {
+         console.log(i);
+     }
+ }
 
-// // Task - 8 Mobile number Validation
+ // Task - 8 Mobile number Validation
 
-// let mobile = prompt("Enter your number :");
-// let firstnum = mobile[0];
+ let mobile = prompt("Enter your number :");
+ let firstnum = mobile[0];
 
-// if (mobile.length === 10 && ((firstnum === "6") || (firstnum === "7") || (firstnum === "8") || (firstnum === "9"))) {
-//     console.log("Valid Mobile Number");
-// } else {
-//     console.log("Invalid Mobile Number");
+ if (mobile.length === 10 && ((firstnum === "6") || (firstnum === "7") || (firstnum === "8") || (firstnum === "9"))) {
+     console.log("Valid Mobile Number");
+ } else {
+     console.log("Invalid Mobile Number");
     
-// }
+ }
 
 
-// // Task - 9 
+ // Task - 9 
 
-// let cart = [
-// "Milk",
-// "Bread",
-// "Egg",
-// "Rice",
-// "Oil"
-// ]
+ let cart = [
+ "Milk",
+ "Bread",
+ "Egg",
+ "Rice",
+ "Oil"
+ ]
 
-// len = cart.length
+ len = cart.length
 
-// console.log(cart[0]);
-// console.log(cart[len - 1]);
-// console.log(len);
+ console.log(cart[0]);
+ console.log(cart[len - 1]);
+ console.log(len);
 
-// // Task - 10 Employee Database
+ // Task - 10 Employee Database
 
-// let employee = {
+ let employee = {
 
-// name : "Jayadeva",
+ name : "Jayadeva",
 
-// salary : 40000,
+ salary : 40000,
 
-// department : "Frontend Developer",
+ department : "Frontend Developer",
 
-// experience : "2"
+ experience : "2"
 
-// }
+ }
 
-// console.log("Employee Name : " + employee.name);
-// console.log("Department : " + employee.department);
-// console.log("Experience : " + employee.experience + " Years");
-
-
-// // Task - 11 Company ID Generator
-
-// let name = "Naveen";
-// let Id = 1045 ;
-// let department = "Development";
-
-// console.log(`Welcome ${name}`);
-// console.log(`Your employee ID is EMP${Id}`);
-// console.log(`Department : ${department}`);
+ console.log("Employee Name : " + employee.name);
+ console.log("Department : " + employee.department);
+ console.log("Experience : " + employee.experience + " Years");
 
 
-// // Task - 12 User Registration
+// Task - 11 Company ID Generator
 
-// let name = prompt("Enter your name :")
+ let name = "Naveen";
+ let Id = 1045 ;
+ let department = "Development";
 
-// let age = Number(prompt("Enetr your Age :"))
+ console.log(`Welcome ${name}`);
+ console.log(`Your employee ID is EMP${Id}`);
+ console.log(`Department : ${department}`);
 
-// let accept = confirm("Do you accept terms?")
 
-// alert("Registration Successful")
+ // Task - 12 User Registration
 
-// // Task - 13 Salary Increment Calculator 
+ let name = prompt("Enter your name :")
 
-// let salary = Number(prompt("Enter Your Salary :"))
+ let age = Number(prompt("Enetr your Age :"))
 
-// let increment = 15
+ let accept = confirm("Do you accept terms?")
 
-// let increasedSalary = salary * increment / 100
+ alert("Registration Successful")
 
-// newSalary = salary + increasedSalary
+ // Task - 13 Salary Increment Calculator 
 
-// console.log("Old Salary : " + salary);
-// console.log("Increment Amount : " + increasedSalary);
-// console.log("New Salary :" + newSalary);
+ let salary = Number(prompt("Enter Your Salary :"))
 
-// // Task - 14 Restaurant Bill Generator
+ let increment = 15
 
-// let Burger = 150
-// let Pizza = 300
-// let Juice = 80 
+ let increasedSalary = salary * increment / 100
 
-// let subTotal = Burger + Pizza + Juice
+ newSalary = salary + increasedSalary
 
-// let GST = subTotal * 18 / 100
+ console.log("Old Salary : " + salary);
+ console.log("Increment Amount : " + increasedSalary);
+ console.log("New Salary :" + newSalary);
 
-// let GrandTotal = subTotal + GST
+ // Task - 14 Restaurant Bill Generator
 
-// console.log("Subtotal : " + subTotal);
-// console.log("GST : " + GST);
-// console.log("Grand Total : " + GrandTotal);
+ let Burger = 150
+ let Pizza = 300
+ let Juice = 80 
 
-// // Task - 15 Company Attendance Dashboard
+ let subTotal = Burger + Pizza + Juice
 
-// let employees = {Rahul : "Present",
+ let GST = subTotal * 18 / 100
 
-// Arun : "Absent",
+ let GrandTotal = subTotal + GST
 
-// Kamal : "Present",
+ console.log("Subtotal : " + subTotal);
+ console.log("GST : " + GST);
+ console.log("Grand Total : " + GrandTotal);
 
-// Priya : "Present",
+ // Task - 15 Company Attendance Dashboard
 
-// Divya : "Absent",};
+ let employees = {Rahul : "Present",
 
-// let p = 0;
-// let a = 0;
+ Arun : "Absent",
 
-// for ( let i in employees ){
-//     if (employees[i] == "Present" ){
-//         console.log(i + " - Present");
-//         p++;
-//     }else{
-//         console.log(i + " - Absent");
-//         a++
+ Kamal : "Present",
+
+ Priya : "Present",
+
+ Divya : "Absent",};
+
+ let p = 0;
+ let a = 0;
+
+ for ( let i in employees ){
+     if (employees[i] == "Present" ){
+         console.log(i + " - Present");
+         p++;
+     }else{
+         console.log(i + " - Absent");
+         a++
         
-//     }
-// }
+     }
+ }
 
-// console.log("Total Present : " + p);
-// console.log("Total Absent : " + a);
-
-
-// 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ console.log("Total Present : " + p);
+ console.log("Total Absent : " + a);
+ 
 
 
 
