@@ -239,6 +239,104 @@
  console.log("Total Present : " + p);
  console.log("Total Absent : " + a);
  
+// Employee Management System (Mini Project)
+
+let employees = [
+    {
+        id: 101,
+        name: "Naveen",
+        salary: 30000,
+        experience: 2
+    },
+    {
+        id: 102,
+        name: "Rahul",
+        salary: 40000,
+        experience: 6
+    },
+    {
+        id: 103,
+        name: "John",
+        salary: 35000,
+        experience: 4
+    }
+];
+
+let choice = 2;
+
+switch(choice){
+    case 1:
+
+        for(let i = 0; i < employees.length; i++){
+
+        console.log(employees[i]);
+
+        }
+
+    break;
+
+    case 2:
+
+        let searchId = 102;
+
+        for(let i=0;i<employees.length;i++){
+
+            if(employees[i].id == searchId){
+                console.log(employees[i]);
+
+            }
+
+        }
+
+    break;
+
+    case 3:
+
+        let bonus = 5000;
+
+        for(let i=0;i<employees.length;i++){
+
+            if(employees[i].id==101){
+                console.log("Salary :",employees[i].salary);
+                console.log("Bonus :",bonus);
+                console.log("Total :",employees[i].salary+bonus);
+             }
+         }
+    break;
+
+    case 4:
+        for(let i=0;i<employees.length;i++){
+            if(employees[i].experience>=5){
+            console.log(`${employees[i].name} is Senior`);
+        }else{
+            console.log(`${employees[i].name} is Junior`);
+        }
+        }
+    break;
+    case 5:
+        employees[3] = {
+        id:104,
+        name:"Kamal",
+        salary:45000,
+        experience:5
+        };
+        console.log(employees);
+
+    break;
+  
+    case 6:
+
+       employees[1] = "Deleted";
+       console.log(employees);
+
+    break;
+    case 7:
+
+        console.log("Thank You");
+
+    break;
+
+}   
 
 
 
